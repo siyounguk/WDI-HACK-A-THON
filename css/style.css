@@ -3,6 +3,13 @@
   background-color: white;
 }
 
+img{
+  float: right;
+  margin-right: 100px;
+  margin-top: 60px;
+  max-height: 400px;
+}
+
 .boxed {
   margin: 0 auto;
   margin-top: 10px;
@@ -22,7 +29,15 @@ margin-top: 10px;
 
 body {
 
-  background: linear-gradient(#ff1a1a, #009900);
+  background: linear-gradient(#1a8cff, white);
+}
+
+#title {
+  font-family: 'Alex Brush', cursive;
+  font-size: 70px;
+  color: white;
+  margin-left: 50px;
+  margin-top: 40px;
 }
 
 #chat {
@@ -33,25 +48,29 @@ body {
 
 #canvas {
   margin-left: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
 
 }
 
 #count {
   display: inline-block;
   float: right;
-  margin-top: 100px;
+  margin-top: 40px;
   margin-right: 250px;
   font-size: 50px;
 }
 
 #playersDiv {
   width: 300px;
-  float:right;
+  float: right;
   margin-top: 40px;
   margin-left: 60px; 
   display:inline-block;
+  clear: right;
+}
 
+#playerlist{
+  display: inline-block;
 }
 
 #name {

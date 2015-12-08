@@ -124,4 +124,16 @@ $(document).ready(function () {
       temp.innerHTML = seconds;
       timeoutMyOswego = setTimeout(countdown, 1000);
     }
+
+  
+        var xmasPics = ['http://www.clipartlord.com/wp-content/uploads/2013/06/christmas-tree21.png', 'http://www.how-to-draw-cartoons-online.com/image-files/cartoon_stocking.gif.pagespeed.ce.jZNTBAVx3J.gif', 'http://www.clipartlord.com/wp-content/uploads/2013/12/snowman26.png', 'http://www.christmas-clipart.com/free_christmas_clip_art_images/clip_art_illustration_of_a_cartoon_santa_clause_with_a_funny_face_0515-0911-2122-4128_SMU.jpg', 'http://icons.iconarchive.com/icons/pelfusion/christmas/256/Christmas-Gift-Box-icon.png'],
+            counter = 0;
+        console.log(xmasPics[counter]);
+        $('#next').click(function () {
+            counter = (counter + 1) % xmasPics.length;
+            $("#image").attr('src', xmasPics[counter] )
+            
+        });
+    
+
 });
