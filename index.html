@@ -19,13 +19,17 @@
 
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
+   <!--  <audio controls autoplay>
+      <source src="./css/music.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>  -->
 
   </head>
   <div id="snow">
 
   <body ng-controller="firebaseController">
 
-    <div ><img id="image" src="http://www.clipartlord.com/wp-content/uploads/2013/06/christmas-tree21.png"> </div>
+    <img id="image" src="http://www.christmas-clipart.com/free_christmas_clip_art_images/clip_art_illustration_of_a_cartoon_santa_clause_with_a_funny_face_0515-0911-2122-4128_SMU.jpg">
 
     <h1 id="title"> Drawing at Christmas...</h1>
 
@@ -55,29 +59,30 @@
                   </div> 
         </div>
 
-    <div id="canvas">
-    <div class="l-demo-container">
-        <canvas id="drawing-canvas" width="1000" height="500"></canvas>
+    <div id="chat">
+      <div id="messagesDiv" class="container">
+      <div ng-repeat="msg in messages"><em>{{msg.name}}</em>: {{msg.body}}</div>
+      </div>
     </div>
+  
+    <div id="chat-name">
+     <input type="text" id="name" ng-model="name" placeholder="Name">
+      <input type="text" id="message" ng-model="msg" ng-keydown="addMessage($event)" placeholder="Message...">
+    </div>
+
+
+    <div id="canvas">
+      <div class="l-demo-container">
+        <canvas id="drawing-canvas" width="800" height="500"></canvas>
+      </div>
+    </div>
+  <div id="options">
     <div id="colorholder"></div> 
     <button id="reset-board"> Clear </button>
     <button id="start-timer"> Start Timer </button>
     <button id="next"> Next Image </button>
-    <div id="chat-name">
-    <input type="text" id="name" ng-model="name" placeholder="Name">
-    <input type="text" id="message" ng-model="msg" ng-keydown="addMessage($event)" placeholder="Message...">
-    </div>
-    <div id="chat">
-    <div id="messagesDiv" class="container">
-      <div ng-repeat="msg in messages"><em>{{msg.name}}</em>: {{msg.body}}</div>
-    </div>
-    </div>   
+  </div>
 
-   
-
-
-
-   </div>
   </body>
   </div>
 </html>
