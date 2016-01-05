@@ -45,6 +45,8 @@ body {
 }
 
 #chat {
+  font-family: arial;
+  font-style: bold;
   width:300px;
   height:250px;
   float: left;

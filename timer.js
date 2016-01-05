@@ -19,7 +19,7 @@
 
 
 var scoreBoard = $('li').click(function() { count++;
-  $("#score").html("Whack count is: "+count); })
+  $("#score").html("Christmas count is: "+count); })
 
   $('li').on("click", function() {
     scoreBoard;  

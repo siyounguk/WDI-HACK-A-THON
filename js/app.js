@@ -114,7 +114,7 @@ $(document).ready(function () {
     
       if (seconds == 1) {
         temp = document.getElementById('countdown');
-        temp.innerHTML = "Times Up!!!";
+        temp.innerHTML = "Time's Up! Merry Christmas one and all!!";
         clearCanvas();
         return;
       }
