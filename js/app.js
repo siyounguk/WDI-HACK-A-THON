@@ -133,7 +133,6 @@ $(document).ready(function () {
             counter = (counter + 1) % xmasPics.length;
             $("#image").attr('src', xmasPics[counter] )
             
-        });
-    
+        });  
 
 });
