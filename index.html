@@ -13,9 +13,9 @@
     <script type="text/javascript" src="./timer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
     <script type="text/javascript" src="controllers/leaderboardController.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"> -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/polikin/GetSkeleton1200/master/skeleton1200.css">
+    <link rel="stylesheet" type="text/css" href="./bower_components/getskeleton1200/skeleton1200.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
@@ -45,7 +45,7 @@
             <input type="text" id="message" ng-model="msg" ng-keydown="addMessage($event)" placeholder="Message...">
           </div>
         </div>
-        <div class="eight columns">
+        <div class="eleven columns">
           <div id="canvas">
             <div class="l-demo-container">
               <canvas id="drawing-canvas" width="800" height="500"></canvas>
@@ -58,8 +58,9 @@
             <button id="next"> Next Image </button>
           </div>
         </div>
-        <div class="one column" id="right">
-          <img id="image" src="http://www.christmas-clipart.com/free_christmas_clip_art_images/clip_art_illustration_of_a_cartoon_santa_clause_with_a_funny_face_0515-  0911-2122-4128_SMU.jpg">
+        <div class="three columns" id="right">
+
+          <img id="image" src="http://www.christmas-clipart.com/free_christmas_clip_art_images/clip_art_illustration_of_a_cartoon_santa_clause_with_a_funny_face_0515-0911-2122-4128_SMU.jpg">
           <div id="playersDiv" ng-controller="playerController">
             <ul>
               <li id="playerlist" ng-repeat="player in players"><em> {{player.player}} <br></em></li>
@@ -76,7 +77,7 @@
               </div>
               <div id="count">
                 <div id="countdown">90</div>
-               </div> 
+              </div> 
             </div>
         </div>
       </div>

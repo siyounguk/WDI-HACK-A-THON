@@ -1,7 +1,19 @@
+.container{
+  width: 1200px;
+}
+
+.row{
+  width: 1200px;
+}
+
 #drawing-canvas {
   border: solid white;
   background-color: white;
   border-radius: 5px;
+}
+
+#right{
+  text-align: center;
 }
 
 img{
@@ -9,7 +21,8 @@ img{
 /*  margin-right: 50px;
   margin-top: 60px;*/
   max-height: 400px;
-  max-width: 200px;
+  max-width: 300px;
+
 }
 
 .boxed {
@@ -38,17 +51,17 @@ body {
   font-family: 'Alex Brush', cursive;
   font-size: 60px;
   color: white;
-/*  margin-left: 50px;
-  margin-top: 30px;
-  margin-bottom: 10px;*/
+  /*margin-left: 50px;*/
+  /*margin-top: 30px;*/
+  margin-bottom: 10px;
   text-shadow: 8px 8px ##66b2ff;
 }
 
 #chat {
   font-family: arial;
   font-style: italic;
-  width:300px;
-  /*height:250px;*/
+  width:120px;
+  height:250px;
 
 /*  margin-right: 50px;
   margin-top: 250px;*/
@@ -72,9 +85,7 @@ body {
   /*margin-left: 470px*/
 }
 
-#right{
-  margin-right: 0;
-}
+
 
 #count {
   display: inline-block;
@@ -111,7 +122,8 @@ body {
 }
 
 #chat-name {
-/*float: left;*/
+  font-size: 10px;
+  width:120px;
 /*margin-left: 20px;
 margin-bottom: 50px;*/
 }
